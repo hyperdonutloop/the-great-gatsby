@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/layout'
+import { Layout } from '@components'
 import styled from 'styled-components'
 
 const StyledMainContainer = styled.main`
@@ -10,7 +10,7 @@ const StyledMainContainer = styled.main`
 
 
 
-// markup
+// using parenthesis rather than curly braces is an implicit return
 const IndexPage = ({ location }) => (
   <Layout location={location}>
     <StyledMainContainer className='fillHeight'>

@@ -5,18 +5,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-styled-components", 
     "gatsby-plugin-gatsby-cloud",
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          '@src': 'src',
-          '@components': 'src/components',
-          '@pages': 'src/pages'
-        },
-        extenstions: [
-          'js',
-        ]
-      }
-    }
+    "gatsby-plugin-alias-imports"
   ],
 };
