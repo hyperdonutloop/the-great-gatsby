@@ -55,7 +55,17 @@ const Layout = ({ location, children }) => {
     <div id='root'>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        hello i am still here
+        
+
+        {isLoading && isHome ? (
+          <Loader finishLoading={() => setIsLoading(false)} />
+        ) : (
+          <StyledContent>
+            <div id='content'>
+              {children}
+            </div>
+          </StyledContent>
+        )}
 
       </ThemeProvider>
     </div>

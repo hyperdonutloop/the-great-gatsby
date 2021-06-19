@@ -12,7 +12,7 @@ const StyledLoader = styled.div`
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: blueviolet;
+  background-color: #A0a4d9;
   z-index: 99;
 
   .logo-wrapper {
@@ -82,7 +82,8 @@ const Loader = ({ finishLoading }) => {
   return (
     <StyledLoader className='loader' isMounted={isMounted}>
       <div className='logo-wrapper'>
-        <IconLoader />
+        {/* <IconLoader /> */}
+        i am loading
       </div>
 
     </StyledLoader>
