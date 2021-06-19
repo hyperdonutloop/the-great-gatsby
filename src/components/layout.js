@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
+import { Loader } from '@components'
 import { GlobalStyle, theme } from '@styles'
 
 if (typeof window !== 'undefined') {
