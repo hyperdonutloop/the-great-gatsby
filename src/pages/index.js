@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { Layout } from '@components'
+import { Layout, Hero } from '@components'
 import styled from 'styled-components'
 
 const StyledMainContainer = styled.main`
@@ -14,7 +14,7 @@ const StyledMainContainer = styled.main`
 const IndexPage = ({ location }) => (
   <Layout location={location}>
     <StyledMainContainer className='fillHeight'>
-      hello
+      <Hero />
     </StyledMainContainer>
 
   </Layout>

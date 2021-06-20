@@ -55,18 +55,11 @@ const Layout = ({ location, children }) => {
     <div id='root'>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        
-
-        {isLoading && isHome ? (
-          <Loader finishLoading={() => setIsLoading(false)} />
-        ) : (
-          <StyledContent>
+        <StyledContent>
             <div id='content'>
               {children}
             </div>
           </StyledContent>
-        )}
-
       </ThemeProvider>
     </div>
     </>
@@ -74,3 +67,14 @@ const Layout = ({ location, children }) => {
 }
 
 export default Layout
+
+// to re-enable customer loader remove StyledContent Block and replace with this
+/* {isLoading && isHome ? (
+  <Loader finishLoading={() => setIsLoading(false)} />
+  ) : (
+    <StyledContent>
+      <div id='content'>
+        {children}
+      </div>
+    </StyledContent>
+  )} */
